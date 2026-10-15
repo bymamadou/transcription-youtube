@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Transcription YouTube",
+  "version": "1.0",
+  "description": "Ajoute un bouton Transcription sous les vidéos YouTube : copier ou télécharger le texte en un clic.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
